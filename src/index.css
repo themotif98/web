@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-forest: #123524;
+  --color-gold: #C7A44B;
+  --color-ivory: #FAF8F3;
+  --color-earth: #3A2415;
+  --color-charcoal: #222222;
+}
+
+@layer base {
+  body {
+    @apply bg-ivory text-charcoal font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+.tracking-luxury {
+  letter-spacing: 0.2em;
+}
+
+/* Custom animations and luxurious scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7A44B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #123524;
+}
+
+/* Luxury card glass effect */
+.glass-panel {
+  background: rgba(250, 248, 243, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

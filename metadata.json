@@ -1,0 +1,6 @@
+{
+  "name": "CEYVANA",
+  "description": "An ultra-premium, luxury eCommerce platform for CEYVANA - exporting the finest authentic, hand-harvested Ceylon spices worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
